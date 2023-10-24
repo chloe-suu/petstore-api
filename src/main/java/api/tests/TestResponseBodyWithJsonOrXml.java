@@ -1,6 +1,5 @@
-package tests;
+package api.tests;
 
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import io.restassured.http.ContentType;
 import io.restassured.path.xml.XmlPath;
 import io.restassured.response.Response;

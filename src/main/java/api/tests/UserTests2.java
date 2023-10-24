@@ -1,12 +1,12 @@
-package tests;
+package api.tests;
 
 import com.github.javafaker.Faker;
-import endpoints.UserResponses2;
+import api.endpoints.UserResponses2;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import payloads.UserObject;
+import api.payloads.UserObject;
 
 import static org.hamcrest.Matchers.*;
 
@@ -26,6 +26,7 @@ public class UserTests2 {
         userObject.setEmail(faker.internet().safeEmailAddress());
         userObject.setPassword(faker.internet().password(5,10));
         userObject.setPhone(faker.phoneNumber().cellPhone());
+        userObject.setUserStatus(1);
     }
 
     @Test(priority = 1)

@@ -1,4 +1,4 @@
-package payloads;
+package api.payloads;
 
 public class PetTagObject {
     int id;

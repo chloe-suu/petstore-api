@@ -1,12 +1,12 @@
-package tests;
+package api.tests;
 
 import com.github.javafaker.Faker;
-import endpoints.UserResponses;
+import api.endpoints.UserResponses;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import payloads.UserObject;
+import api.payloads.UserObject;
 
 public class UserTests {
     Faker faker ;
@@ -53,7 +53,7 @@ public class UserTests {
         Assert.assertEquals(response.getStatusCode(),200);
 
         Response responseAfterUpdate = UserResponses.getUserByName(this.userObject.getUsername());
-        response.then().log().all();
+        responseAfterUpdate.then().log().all();
         Assert.assertEquals(response.getStatusCode(),200);
     }
 
