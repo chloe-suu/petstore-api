@@ -1,17 +1,16 @@
-package tests;
+package api.tests;
 
 import com.github.javafaker.Faker;
-import endpoints.PetResponses;
+import api.endpoints.PetResponses;
 import io.restassured.response.Response;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import payloads.PetCategoryObject;
-import payloads.PetObject;
-import payloads.PetTagObject;
+import api.payloads.PetCategoryObject;
+import api.payloads.PetObject;
+import api.payloads.PetTagObject;
 
 import java.io.File;
 import java.util.Collections;
-import java.util.List;
 
 public class PetTests {
     PetObject pet;

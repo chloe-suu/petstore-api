@@ -1,6 +1,6 @@
-package tests;
+package api.tests;
 
-import endpoints.URLs;
+import api.endpoints.URLs;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 import org.testng.annotations.Test;

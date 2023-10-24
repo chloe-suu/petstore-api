@@ -1,12 +1,12 @@
-package tests;
+package api.tests;
 
+import utilities.DataProviders;
 import com.github.javafaker.Faker;
-import endpoints.UserResponses;
+import api.endpoints.UserResponses;
 import io.restassured.response.Response;
 import org.testng.Assert;
-import utilities.DataProviders;
 import org.testng.annotations.Test;
-import payloads.UserObject;
+import api.payloads.UserObject;
 
 public class DataDrivenTests {
     UserObject user;

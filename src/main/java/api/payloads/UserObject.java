@@ -1,4 +1,4 @@
-package payloads;
+package api.payloads;
 
 public class UserObject {
         int id;

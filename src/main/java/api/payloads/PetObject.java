@@ -1,4 +1,4 @@
-package payloads;
+package api.payloads;
 
 import java.util.List;
 

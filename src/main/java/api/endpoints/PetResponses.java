@@ -1,23 +1,15 @@
-package endpoints;
+package api.endpoints;
 
+import api.payloads.PetObject;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import payloads.PetObject;
 
 import java.io.File;
-import java.util.ResourceBundle;
 
 import static io.restassured.RestAssured.given;
 
 public class PetResponses extends baseResponse {
 
-    //declare url variables ---------------------------------------------------------
-    static String base_url = getURL().getString("base_url");
-    static String post_pet_url = base_url + getURL().getString("post_pet_url");
-    static String pet_byId = base_url +getURL().getString("pet_byId");
-    static String pet_upload_image = base_url +getURL().getString("pet_upload_image");
-
-    //responses-----------------------------------------------------
     public static Response createPet(PetObject pet){
         return given()
                 .contentType(ContentType.JSON)

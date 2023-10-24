@@ -1,4 +1,4 @@
-package payloads;
+package api.payloads;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,4 +1,4 @@
-package tests;
+package api.tests;
 
 import io.restassured.http.Headers;
 import io.restassured.http.Header;
